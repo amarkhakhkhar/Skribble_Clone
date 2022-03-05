@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skribble-Game Page</title>
+
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <span>
+        <h1>Skribble</h1>
+    </span>
+    <div class="starting" id="landingpage">
+        <h1><span>Welcome to Skribble game</span></h1>
+        <span>
+            <label for="username">Enter your name: </label>
+            <input type="text" name="username" id="username" autofocus>
+            <input type="submit" value="Submit" id="submit">
+        </span>
+
+    </div>
+    <div class="layout" id="layout">
+        <div class="timer" style="display: flex"><img class="timer" src="timer.png" />
+            <h1 class="timer" id="timer">00:00</h1>
+        </div>
+        <div class="wordblanks">
+            <input type="button" value="End Turn" id="timerr" class="">
+            <h4 id="word"></h4>
+            <h4 id="currentdrawer">h</h4>
+            <div class="wordsoptions"></div>
+        </div>
+        <div class="scorecard">
+            <div class="">
+                <h1>Scorecard: </h1>
+            </div>
+            <div class="scoreboardfetched">
+
+            </div>
+        </div>
+        <div class="drawingarea">
+            <canvas id="canvas"></canvas>
+            <div class="nav">
+                <div class="clr" data-clr="#000"></div>
+                <div class="clr" data-clr="#EF626C"></div>
+                <div class="clr" data-clr="#fdec03"></div>
+                <div class="clr" data-clr="#24d102"></div>
+                <div class="clr" data-clr="#fff"></div>
+                <div class="wdth" data-wdth="5">5</div>
+                <div class="wdth" data-wdth="10">10</div>
+                <div class="wdth" data-wdth="15">15</div>
+                <div class="wdth" data-wdth="20">20</div>
+                <button class="clear">Clear</button>
+            </div>
+        </div>
+        <div class="guessarea" id="guessarea">
+            <h1>Chat Box</h1>
+            <div class="textinput">
+                <input type="text" name="guess" autofocus="true" id="guess" style="width: 75%">
+                <button class="checkans" style="width: 17%">Send</button>
+            </div>
+            <div class="guesshistory">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

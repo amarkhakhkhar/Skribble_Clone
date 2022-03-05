@@ -1,0 +1,192 @@
+*{  
+  
+        -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+           -khtml-user-select: none; /* Konqueror HTML */
+             -moz-user-select: none; /* Old versions of Firefox */
+              -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+                                            margin: 0;
+    box-sizing: border-box;
+}
+span{
+    text-align: center;
+}
+.hidden{
+    display: none !important;
+}
+#landingpage{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+}
+.layout{
+    display: grid;
+    background-color: bisque;
+    padding: 10px;
+    gap: 10px;
+}
+h1.timer{
+    font-size: 9vh !important;
+}
+.timer, img.timer{
+    background-color: blueviolet;
+    height: 9vh;
+    grid-column: 1;
+    grid-row: 1;
+}
+.wordblanks{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50vw;
+    font-size: 50px;
+    text-align: center;
+    align-items: baseline;
+    background-color: blueviolet;
+    height: 9vh;
+    grid-column: 2;
+    grid-row: 1;
+}
+.scorecard{
+    width: 17vw;
+    background-color: blueviolet;
+    max-height: 80vh;
+    grid-column: 1;
+    grid-row: 2;
+}
+.drawingarea{
+    width: 60vw;
+    background-color: blueviolet;
+    max-height: 80vh;
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+.guessarea{
+    width: 21vw;
+    overflow-y: scroll;
+    position: relative;
+    background-color: wheat;
+    max-height: 80vh;
+    grid-column: 4;
+    grid-row: 2;
+}
+.scoreboard{
+    display: flex;
+    background-color: wheat;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+img.scoreboard{
+    border: none;
+    height: 4.4vh;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.textinput{
+    display: flex;
+    width: 100%;
+    position: sticky;
+    bottom: 0px ;
+}
+.guessed{
+    width: 18vw;
+    font-size: larger;
+    padding-left: 5px;
+    background-color: wheat;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.true{
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+.nav{
+    width: 35vw;
+    height: 20vh;
+    position: absolute;
+    top: 11vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: .3;
+    transition: opacity .5s;
+}
+.nav:hover{
+    opacity: 1;
+}
+
+.clr{
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid rgb(214, 214, 214);
+    transition: transform .5s;
+}
+.clr:hover{
+    transform: scale(1.2);
+}
+.clr:nth-child(1){
+    background-color: #000;
+}
+.clr:nth-child(2){
+    background-color: #EF626C;
+}
+.clr:nth-child(3){
+    background-color: #fdec03;
+}
+.clr:nth-child(4){
+    background-color: #24d102;
+}
+.clr:nth-child(5){
+    background-color: #fff;
+}
+.wdth{
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid rgb(214, 214, 214);
+    transition: transform .5s;
+}
+.wdth:hover{
+    transform: scale(1.2);
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: .6em 1em;
+    border-radius: 3px;
+    background-color: #03bb56;
+    color: #fff;
+}
+.save{
+    background-color: #0f65d4;
+}
+#timerr{
+    background-color: chartreuse;
+}
+.wordsoptions{
+    display: flex;
+    justify-content: center;    
+}
+.wordbuttons{
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.wordbutton{
+    font-size: 20px;
+}
