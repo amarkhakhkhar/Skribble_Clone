@@ -10,3 +10,4 @@ A skirbble clone made with help of Javascript, NodeJS and Socket.io.
 <li>Site is not yet made responsive for mobile. Do not attempt any such things which can break the site.
 In case of any bugs, suggestions, feel free to contact me from my profile
          
+Soon screenshots or live site will be uploaded, stay tuned
