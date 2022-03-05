@@ -12,3 +12,10 @@ A skirbble clone made with help of Javascript, NodeJS and Socket.io.
  In case of any bugs, suggestions, feel free to contact me from my profile
          
 Soon screenshots or live site will be uploaded, stay tuned
+
+https://user-images.githubusercontent.com/95528997/156880924-0821d8c8-d388-4a5b-b517-31549d821e0b.mp4
+
+
+
+https://user-images.githubusercontent.com/95528997/156880925-c1da6ac2-1a1b-47f8-b6af-40843d5e54f2.mp4
+
